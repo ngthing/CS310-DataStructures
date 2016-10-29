@@ -1,0 +1,14 @@
+1. In method add(Number n) before I return the sum, I assert as below to make sure that the 
+Number sum just created doesn't point to null, its decimalPlaces and digitCount are in 
+valid range. 
+		assert ( sum !=null && sum.digitCount > 0 && sum.decimalPlaces >= 0 );
+		
+2. In method subtractAbsolute(Number n), after I find the largest number, I assign thisnew to 
+the larger number and nnew to the other one, I make sure that they are not null with the 
+following assertion: 
+		assert (thisnew!=null && nnew !=null); 
+		
+3. In method subtract(Number n) before I return the difference, I assert as below to make sure that the 
+Number difference just created doesn't point to null, its decimalPlaces and digitCount are in 
+valid range.
+	assert (difference != null && difference.digitCount >0 && difference.decimalPlaces >=0 );
